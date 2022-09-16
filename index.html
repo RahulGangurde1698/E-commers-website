@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive ecommerce website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- <script src="shopping-cart.js"></script> -->
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">Shoe Gallery</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#service">Services</a>
+        </nav>
+        <div class="searchbar">
+            <form action="#">
+                <input type="search" placeholder="Search" />
+                <i class="fa fa-search" id="search-icon"></i>
+            </form>
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart shoppingCartButton" id="iconcard"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+        <div class="producstOnCart hide">
+            <div class="overlay"></div>
+
+            <div class="cartContainer">
+                <ul id="buyItems">
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <h3>Cart</h3>
+                    </div>
+                    <div class="row">
+                        <!-- <li class="buyItem">
+                    <img src="images/product-1.png" class="cartImage">
+                    <div>
+                        <h5 class="cartTitle">Products Name</h5>
+                        <h6 class="cartPrice">$199</h6>
+                        <div>
+                            <button>-</button>
+                            <span class="countOfProduct">1</span>
+                            <button>+</button>
+                        </div>
+                        <button class="removeButton">Remove</button>
+                    </div>
+                </li> -->
+                    </div>
+                </ul>
+            </div>
+            <button class="btn checkout hidden" onclick="checkout()">Check out</button>
+
+            <h2 class="cartTotalPrice"></h2>
+        </div>
+
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content productContainer ">
+                    <span class="productTitle">nike red shoes</span>
+                    <h3>nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque
+                        veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                        <div class="Price">Rs.1299</div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                    <img src="images/home-shoe-1.png" class="shoe img " alt="" style="display: none;">
+                </div>
+                <div class="image">
+                    <img src="images/home-shoe-1.png" class="shoe img " alt="">
+                    <img src="images/home-text-1.png" class="text" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content productContainer ">
+                    <span class="productTitle">nike blue shoes</span>
+                    <h3>nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque
+                        veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                        <div class="Price">Rs.1299</div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                    <img src="images/home-shoe-2.png" class="shoe img " alt="" style="display: none;">
+                </div>
+                <div class="image">
+                    <img src="images/home-shoe-2.png" class="shoe img " alt="">
+                    <img src="images/home-text-2.png" class="text" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content productContainer ">
+                    <span class="productTitle">nike Yellow shoes</span>
+                    <h3>nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque
+                        veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                        <div class="Price">Rs.1299</div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                    <img src="images/home-shoe-3.png" class="shoe img " alt="" style="display: none;">
+                </div>
+                <div class="image">
+                    <img src="images/home-shoe-3.png" class="shoe img " alt="">
+                    <img src="images/home-text-3.png" class="text" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- service section starts  -->
+
+    <section class="service" id="service">
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>fast delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-undo"></i>
+                <h3>10 days replacements</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24 x 7 support</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- service section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> latest <span>products</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+
+                <div class="productContainer">
+                    <img src="images/Reebok.png" class="img" alt="">
+                    <div class="content">
+                        <h3 class="productTitle"> Reebok Shoes</h3>
+                        <div class="Price">Rs.1299</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="productContainer">
+                    <img src="images/adidas.png" class="img" alt="">
+                    <div class="content">
+                        <h3 class="productTitle">Adidas shoes</h3>
+                        <div class=" Price">Rs.1899</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="productContainer">
+                    <img src="images/woodlands.png" class="img" alt="">
+                    <div class="content">
+                        <h3 class="productTitle"> Woodland shoes</h3>
+                        <div class=" Price">Rs.3999</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="productContainer">
+                    <img src="images/PUMA.png" class="img" alt="">
+                    <div class="content">
+                        <h3 class="productTitle">Puma shoes</h3>
+                        <div class=" Price">Rs.2999</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="productContainer">
+                    <img src="images/NIKE.png" class="img" alt="">
+                    <div class="content">
+                        <h3 class="productTitle">Nike shoes</h3>
+                        <div class=" Price">Rs.1299</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="productContainer">
+                    <img src="images/Mochi.png" class="img" alt="">
+                    <div class="content">
+                        <h3 class="productTitle">Mochi shoes</h3>
+                        <div class=" Price">Rs.1499</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- featured section starts  -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured</span> products </h1>
+
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/pro-1.webp" class="featured-image-1" alt="">
+                    <img src="images/pro-1 left.webp" class="featured-image-1" alt="">
+                    <img src="images/pro-1 right.webp" class="featured-image-1" alt="">
+                    <img src="images/pro-1 back.webp" class="featured-image-1" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/pro-1.webp" class="big-image-1" alt="">
+                </div>
+            </div>
+            <div class="content  productContainer">
+                <h3  class="productTitle">New REEBOK shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas
+                    illum iure libero quis fuga commodi. Autem.</p>
+                    <img src="images/pro-1.webp" class="big-image-1  img" alt="" style="display: none;">
+                    <div class=" Price">Rs.1599</div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/pro -2.webp" class="featured-image-2" alt="">
+                    <img src="images/pro-2 left.webp" class="featured-image-2" alt="">
+                    <img src="images/pro-2 right.webp" class="featured-image-2" alt="">
+                    <img src="images/pro-2 back.webp" class="featured-image-2" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/pro -2.webp" class="big-image-2" alt="">
+                </div>
+            </div>
+            <div class="content  productContainer">
+                <h3  class="productTitle">New CAMPUS  shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas
+                    illum iure libero quis fuga commodi. Autem.</p>
+                    <img src="images/pro -2.webp" class="big-image-1  img" alt="" style="display: none;">
+                    <div class=" Price">Rs.1099</div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/pro-3.webp" class="featured-image-3" alt="">
+                    <img src="images/pro-3 left.webp" class="featured-image-3" alt="">
+                    <img src="images/pro3 right.webp" class="featured-image-3" alt="">
+                    <img src="images/pro-3 back.webp" class="featured-image-3" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/pro-3.webp" class="big-image-3" alt="">
+                </div>
+            </div>
+            <div class="content productContainer">
+                <h3 class="productTitle">New Sparx shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas
+                    illum iure libero quis fuga commodi. Autem.</p>
+
+                    <img src="images/pro-3.webp" class="big-image-1  img" alt="" style="display: none;">
+                    <div class=" Price">Rs.1699</div>
+                    <a href="#" class="btn addToCartBtn">add to cart</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> customer's <span>review</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/pic1.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur
+                    ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores?
+                    Exercitationem, unde rem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/pic2.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur
+                    ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores?
+                    Exercitationem, unde rem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/pic3.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur
+                    ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores?
+                    Exercitationem, unde rem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- newsletter section starts  -->
+
+    <section class="newsletter">
+
+        <div class="content">
+            <h3>monthly newsletter</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ullam veniam at itaque culpa hic corporis
+                saepe dicta doloremque nihil.</p>
+            <form action="">
+                <input type="email" placeholder="enter your email" class="box">
+                <input type="submit" value="send" class="btn">
+            </form>
+        </div>
+
+    </section>
+
+    <!-- newsletter section ends -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our stores</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">paris</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">products</a>
+                <a href="#">featured</a>
+                <a href="#">review</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my favorite</a>
+                <a href="#">my orders</a>
+                <a href="#">newsletter</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div>
+
+            <div class="credit">created by <span> Rahul Gangurde </span> | all rights reserved</div>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
