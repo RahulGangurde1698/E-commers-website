@@ -1,5 +1,5 @@
 # E-commers-website
-using HTML ,CSS , JavaScript made the website having add to cart option on products and remove products.
+using HTML,CSS,JavaScript made the website having add to cart option on products and remove products.
  
 
 # OUTPUT
